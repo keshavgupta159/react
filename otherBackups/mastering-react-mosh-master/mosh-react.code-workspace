@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "counter-app"
+		},
+		{
+			"path": "react-app"
+		},
+		{
+			"path": "vidly"
+		},
+		{
+			"path": "router-app"
+		},
+		{
+			"path": "http-app"
+		},
+		{
+			"path": "vidly-api-node"
+		}
+	],
+	"settings": {}
+}
