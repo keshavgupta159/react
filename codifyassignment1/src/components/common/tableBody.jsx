@@ -3,16 +3,16 @@ import FilterRow from "./filterRow";
 
 class TableBody extends Component {
   render() {
-    const { tableData, columnHead, onKeyupFilterData } = this.props;
+    const { tableData, tableHead, onKeyupFilterData } = this.props;
     return (
       <tbody>
         <FilterRow
-          columnHead={columnHead}
+          tableHead={tableHead}
           onKeyupFilterData={onKeyupFilterData}
         />
         {tableData.map((tableData) => (
           <tr key={tableData.ID}>
-            {columnHead.slice(1, columnHead.length).map((keysArr) => (
+            {tableHead.map((keysArr) => (
               <td key={tableData[keysArr.colName]}>
                 {tableData[keysArr.colName]}
               </td>

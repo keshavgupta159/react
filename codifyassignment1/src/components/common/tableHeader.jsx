@@ -29,11 +29,11 @@ class TableHeader extends Component {
   };
 
   render() {
-    const { columnHead } = this.props;
+    const { tableHead } = this.props;
     return (
       <thead>
         <tr className="text-center">
-          {columnHead.slice(1, columnHead.length).map((tHeader) => (
+          {tableHead.map((tHeader) => (
             <th
               key={tHeader.colName}
               className="clickable"

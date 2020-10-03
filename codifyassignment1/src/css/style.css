@@ -3,10 +3,21 @@
   border-width: 0 0 2px;
   border-color: #dee2e6;
   width: inherit;
+  background: #f2f2f2;
+  color: #000;
+}
+
+.table-dark .filterCol {
   background: #3e444a;
+  color: #fff;
 }
 
 .filterCol:focus {
+  border-color: #777;
+  color: #000;
+}
+
+.table-dark .filterCol:focus {
   border-color: #777;
   color: #fff;
 }

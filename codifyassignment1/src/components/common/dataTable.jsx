@@ -6,22 +6,25 @@ class DataTable extends Component {
   render() {
     const {
       tableData,
-      columnHead,
+      tableHead,
       onKeyupFilterData,
       sortColumn,
       onClickSort,
     } = this.props;
 
     return (
-      <table className="table table-striped table-dark mt-2 text-nowrap">
+      <table
+        className="table table-striped table-dark mt-2 text-nowrap"
+        id="dt"
+      >
         <TableHeader
-          columnHead={columnHead}
+          tableHead={tableHead}
           sortColumn={sortColumn}
           onClickSort={onClickSort}
         />
         <TableBody
           tableData={tableData}
-          columnHead={columnHead}
+          tableHead={tableHead}
           onKeyupFilterData={onKeyupFilterData}
         />
       </table>
