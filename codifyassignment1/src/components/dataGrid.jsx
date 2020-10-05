@@ -22,9 +22,8 @@ class DataGrid extends Component {
       tableData: this.props.tableData,
       dispTableData: this.props.tableData,
       tableHead: this.props.tableHeads,
-      dispTableHead: this.props.tableHeads,
+      dispTableHead: this.props.tableHeads.filter((thead) => !thead.colDispOpt),
     });
-    this.handleFliterCol();
   }
 
   //lamda expression -> fnName = (params) => {functionality}; fnName is anonymous function

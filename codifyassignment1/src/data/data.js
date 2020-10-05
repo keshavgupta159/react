@@ -145,6 +145,18 @@ const columnLabel = [
   "Website",
 ];
 
+const columnDispOpt = [
+  { colDispOpt: true },
+  { colDispOpt: false },
+  { colDispOpt: true },
+  { colDispOpt: false },
+  { colDispOpt: false },
+  { colDispOpt: false },
+  { colDispOpt: false },
+  { colDispOpt: true },
+  { colDispOpt: true },
+];
+
 const columnName = [...Object.keys(personData[0])];
 
 export function getRecords() {
@@ -156,7 +168,7 @@ export function getColumn() {
   const colLabel = toObject(columnLabel, "colLabel");
   let column = [];
   for (let i = 0; i < colName.length; i++)
-    column[i] = { ...colName[i], ...colLabel[i] };
+    column[i] = { ...colName[i], ...colLabel[i], ...columnDispOpt[i] };
   return column;
 }
 

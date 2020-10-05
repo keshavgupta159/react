@@ -38,6 +38,8 @@ class Settings extends Component {
                       type="checkbox"
                       onChange={onClickFliterCol}
                       value={thead.colName}
+                      defaultChecked={!thead.colDispOpt}
+                      disabled={!thead.colDispOpt}
                     />
                     <label className="ml-2" style={{ fontWeight: "bold" }}>
                       {thead.colLabel}
