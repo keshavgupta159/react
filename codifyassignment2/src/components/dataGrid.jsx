@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { getFilteredData } from "../utils/filter";
 import { getPaginatedData } from "../utils/paginate";
 import { getSortedData } from "../utils/sort";
 import { getFilteredGroupedData } from "../utils/groupData";
