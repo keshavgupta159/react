@@ -16947,14 +16947,14 @@ const columnLabel = [
   "Channel",
   "Units",
   "Customer",
-  "Product",
+  // "Product",
   "Amount",
   "Discount",
   "Sale Date",
 ];
 
-// const columnName = [...Object.keys(data[0])] .filter((rec) => rec !== "Product");
-const columnName = [...Object.keys(data[0])];
+const columnName = [...Object.keys(data[0])].filter((rec) => rec !== "Product");
+// const columnName = [...Object.keys(data[0])];
 
 export function getRecords() {
   return data;
