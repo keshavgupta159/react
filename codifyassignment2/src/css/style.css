@@ -1,0 +1,17 @@
+.filterCol {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #dee2e6;
+  width: inherit;
+  background: #fff;
+  color: #000;
+}
+
+.filterCol:focus {
+  border-color: #777;
+  color: #000;
+}
+
+.clickable {
+  cursor: pointer;
+}
