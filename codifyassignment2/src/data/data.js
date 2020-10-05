@@ -16970,7 +16970,7 @@ export function getColumn() {
 }
 
 export function getGroupBy() {
-  return { colName: "Product", colValue: "SolarOne" };
+  return { colName: "Product", colValue: "Eco Max" };
 }
 
 function toObject(arr, keyName) {

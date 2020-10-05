@@ -48,7 +48,7 @@ class DataGrid extends Component {
   };
 
   handleGroup = (groupBy) => {
-    this.setState({ groupBy });
+    this.setState({ groupBy, currentPage: 1 });
   };
 
   render() {
@@ -61,7 +61,7 @@ class DataGrid extends Component {
     } = this.state;
     let dispTableData = this.state.dispTableData;
     let groupedTableData = getFilteredGroupedData(dispTableData, groupBy);
-    let recordLength = dispTableData.length;
+    let recordLength = 0;
     for (let i = 0; i < groupedTableData.length; i++) {
       const objKey = Object.keys(groupedTableData[i])[0];
       if (groupedTableData[i][objKey].length !== 0) {
